@@ -3,92 +3,100 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resep Makanan Nusantara</title>
+  <title>Reservasi Ruangan</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-50 font-sans">
 
   <!-- Navbar -->
-  <nav class="bg-white shadow-md fixed w-full top-0 z-10">
+  <nav class="bg-blue-600 shadow-md fixed w-full top-0 z-10">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-green-600">ResepKu</h1>
-      <ul class="flex space-x-6 text-gray-700 font-medium">
-        <li><a href="#home" class="hover:text-green-600">Home</a></li>
-        <li><a href="#recipes" class="hover:text-green-600">Resep</a></li>
-        <li><a href="#about" class="hover:text-green-600">Tentang</a></li>
-        <li><a href="#contact" class="hover:text-green-600">Kontak</a></li>
+      <h1 class="text-2xl font-bold text-white">BookSpace</h1>
+      <ul class="flex space-x-6 text-white font-medium">
+        <li><a href="#home" class="hover:underline">Home</a></li>
+        <li><a href="#rooms" class="hover:underline">Ruangan</a></li>
+        <li><a href="#reserve" class="hover:underline">Reservasi</a></li>
+        <li><a href="#contact" class="hover:underline">Kontak</a></li>
       </ul>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section id="home" class="h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('https://source.unsplash.com/1600x900/?food,indonesian');">
+  <section id="home" class="h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('https://source.unsplash.com/1600x900/?meeting,office');">
     <div class="bg-black bg-opacity-50 p-10 rounded-xl text-center text-white">
-      <h2 class="text-4xl md:text-6xl font-bold mb-4">Selamat Datang di ResepKu</h2>
-      <p class="text-lg md:text-xl mb-6">Temukan berbagai resep makanan lezat khas Nusantara</p>
-      <a href="#recipes" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full font-semibold">Lihat Resep</a>
+      <h2 class="text-4xl md:text-6xl font-bold mb-4">Reservasi Ruangan Mudah</h2>
+      <p class="text-lg md:text-xl mb-6">Booking ruang meeting, aula, atau kelas hanya dengan sekali klik.</p>
+      <a href="#reserve" class="bg-blue-500 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold">Reservasi Sekarang</a>
     </div>
   </section>
 
-  <!-- Recipes Section -->
-  <section id="recipes" class="max-w-7xl mx-auto px-6 py-16">
-    <h2 class="text-3xl font-bold text-center text-green-700 mb-10">Resep Populer</h2>
+  <!-- Rooms Section -->
+  <section id="rooms" class="max-w-7xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold text-center text-blue-700 mb-10">Ruangan Tersedia</h2>
     <div class="grid md:grid-cols-3 gap-8">
       <!-- Card 1 -->
       <div class="bg-white shadow-lg rounded-xl overflow-hidden">
-        <img src="https://source.unsplash.com/400x300/?nasi-goreng" alt="Nasi Goreng" class="w-full h-48 object-cover">
+        <img src="https://source.unsplash.com/400x300/?conference-room" alt="Ruang Meeting" class="w-full h-48 object-cover">
         <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2">Nasi Goreng</h3>
-          <p class="text-gray-600 mb-4">Resep nasi goreng khas Indonesia yang gurih dan nikmat.</p>
-          <a href="#" class="text-green-600 font-medium hover:underline">Lihat Resep</a>
+          <h3 class="text-xl font-semibold mb-2">Ruang Meeting</h3>
+          <p class="text-gray-600 mb-4">Cocok untuk rapat kecil 5-10 orang.</p>
         </div>
       </div>
       <!-- Card 2 -->
       <div class="bg-white shadow-lg rounded-xl overflow-hidden">
-        <img src="https://source.unsplash.com/400x300/?sate" alt="Sate Ayam" class="w-full h-48 object-cover">
+        <img src="https://source.unsplash.com/400x300/?classroom" alt="Ruang Kelas" class="w-full h-48 object-cover">
         <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2">Sate Ayam</h3>
-          <p class="text-gray-600 mb-4">Sate ayam dengan bumbu kacang khas Nusantara.</p>
-          <a href="#" class="text-green-600 font-medium hover:underline">Lihat Resep</a>
+          <h3 class="text-xl font-semibold mb-2">Ruang Kelas</h3>
+          <p class="text-gray-600 mb-4">Ruang kelas dengan kapasitas 20-30 orang.</p>
         </div>
       </div>
       <!-- Card 3 -->
       <div class="bg-white shadow-lg rounded-xl overflow-hidden">
-        <img src="https://source.unsplash.com/400x300/?rendang" alt="Rendang" class="w-full h-48 object-cover">
+        <img src="https://source.unsplash.com/400x300/?auditorium" alt="Aula" class="w-full h-48 object-cover">
         <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2">Rendang</h3>
-          <p class="text-gray-600 mb-4">Rendang Padang, makanan terenak di dunia versi CNN.</p>
-          <a href="#" class="text-green-600 font-medium hover:underline">Lihat Resep</a>
+          <h3 class="text-xl font-semibold mb-2">Aula</h3>
+          <p class="text-gray-600 mb-4">Aula luas untuk 100+ orang, cocok untuk seminar.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="bg-green-50 py-16 px-6">
-    <div class="max-w-5xl mx-auto text-center">
-      <h2 class="text-3xl font-bold text-green-700 mb-6">Tentang ResepKu</h2>
-      <p class="text-gray-700 text-lg leading-relaxed">
-        ResepKu hadir untuk memudahkan Anda menemukan berbagai resep masakan nusantara yang mudah dibuat di rumah.
-        Dengan bahan-bahan yang sederhana, Anda bisa menikmati hidangan lezat khas Indonesia bersama keluarga.
-      </p>
+  <!-- Reservation Form -->
+  <section id="reserve" class="bg-blue-50 py-16 px-6">
+    <div class="max-w-3xl mx-auto bg-white shadow-lg rounded-xl p-8">
+      <h2 class="text-3xl font-bold text-center text-blue-700 mb-8">Form Reservasi</h2>
+      <form class="space-y-6">
+        <input type="text" placeholder="Nama Lengkap" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+        <input type="email" placeholder="Email" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+        <input type="tel" placeholder="Nomor Telepon" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+        <select class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+          <option>Pilih Ruangan</option>
+          <option>Ruang Meeting</option>
+          <option>Ruang Kelas</option>
+          <option>Aula</option>
+        </select>
+        <div class="grid grid-cols-2 gap-4">
+          <input type="date" class="p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+          <input type="time" class="p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+        </div>
+        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold">Pesan Sekarang</button>
+      </form>
     </div>
   </section>
 
   <!-- Contact Section -->
   <section id="contact" class="max-w-7xl mx-auto px-6 py-16">
-    <h2 class="text-3xl font-bold text-center text-green-700 mb-10">Kontak Kami</h2>
-    <form class="max-w-3xl mx-auto bg-white shadow-lg rounded-xl p-8 space-y-6">
-      <input type="text" placeholder="Nama Anda" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400">
-      <input type="email" placeholder="Email Anda" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400">
-      <textarea rows="4" placeholder="Pesan Anda" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400"></textarea>
-      <button type="submit" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold">Kirim</button>
-    </form>
+    <h2 class="text-3xl font-bold text-center text-blue-700 mb-10">Kontak Kami</h2>
+    <p class="text-center text-gray-700 mb-6">Butuh bantuan? Hubungi kami melalui email atau telepon.</p>
+    <div class="text-center">
+      <p class="font-medium">📧 email@bookspace.com</p>
+      <p class="font-medium">📞 +62 812 3456 7890</p>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-green-600 text-white py-6 text-center">
-    <p>&copy; 2025 ResepKu. All rights reserved.</p>
+  <footer class="bg-blue-600 text-white py-6 text-center">
+    <p>&copy; 2025 BookSpace. All rights reserved.</p>
   </footer>
 
 </body>
